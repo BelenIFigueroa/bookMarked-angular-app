@@ -1,0 +1,17 @@
+<h2>Lista de libros: </h2>
+
+<div class="grid-info">
+  @for (book of books(); track book.id) {
+    <div class="info-card">
+      <h3>{{ book.title }}</h3>
+      <span class="author"> {{ book.author }} </span>
+      <span class="genero"> {{ book.genero }}</span>
+
+      <div class="actions">
+        <button (click)="editBook(book)">Editar</button>
+        <button (click)="deleteBook(book.id)">Eliminar</button>
+      </div>
+    </div>
+  }
+</div>
+

@@ -1,0 +1,17 @@
+<h2>{{ isEditMode() ? 'Editar Book' : 'Crear Nuevo Book' }} </h2>
+
+<form [formGroup]="form" (ngSubmit) = "saveBook()">
+  <div>
+    <label>Titulo: </label>
+    <input type="text" formControlName="title" />
+  </div>
+  <div>
+    <label>Autor: </label>
+    <input type="text" formControlName="author" />
+  </div>
+  <div>
+    <label>Genero: </label>
+    <input type="text" formControlName="genero" />
+  </div>
+
+</form>
