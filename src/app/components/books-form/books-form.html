@@ -1,17 +1,30 @@
-<h2>{{ isEditMode() ? 'Editar Book' : 'Crear Nuevo Book' }} </h2>
+<div class="conteiner">
+  <h2>{{ isEditMode() ? 'Editar Book' : 'Crear Nuevo Book' }} </h2>
 
-<form [formGroup]="form" (ngSubmit) = "saveBook()">
-  <div>
-    <label>Titulo: </label>
-    <input type="text" formControlName="title" />
-  </div>
-  <div>
-    <label>Autor: </label>
-    <input type="text" formControlName="author" />
-  </div>
-  <div>
-    <label>Genero: </label>
-    <input type="text" formControlName="genero" />
-  </div>
+  <form [formGroup]="form" (ngSubmit) = "saveBook()">
+    <div>
+      <label>Titulo: </label>
+      <input type="text" formControlName="title" />
+    </div>
+    <div>
+      <label>Autor: </label>
+      <input type="text" formControlName="author" />
+    </div>
+    <div>
+      <label>Genero: </label>
+      <input type="text" formControlName="genero" />
+    </div>
+
+    <div class="btns">
+      <button type="submit" [disabled]="form.invalid">
+        {{isEditMode() ? 'Actualizar' : 'Crear'}}
+      </button>
+
+      @if (isEditMode()) {
+        <button type="button" (click)="cancelEdit()"> Cancelar</button>
+      }
+    </div>
 
 </form>
+
+</div>

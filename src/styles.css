@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+.html, body{
+  box-sizing: border-box;
+  background-color: rgb(172, 160, 160);
+  color: rgb(77, 25, 25);
+}
+
+*,
+*::after,
+*::before{
+  box-sizing: inherit;
+}
+
+main {
+  flex-grow: 1;
+  /* Centra el contenido como en la maqueta */
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}

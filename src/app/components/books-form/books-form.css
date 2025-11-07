@@ -1,0 +1,29 @@
+
+.conteiner{
+  display: block;
+  width: 50rem; /* Ancho máximo del form */
+  margin: 4rem auto;  /* Centrado en la página */
+  background-color: rgb(126, 103, 103);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem; /* Espacio entre cada campo */
+
+}
+
+form div input{
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgb(161, 147, 147);
+
+}
+
+button {
+  border-radius: 4px;
+  background-color: rgb(161, 147, 147);
+  padding: 4px;
+}

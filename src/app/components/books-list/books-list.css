@@ -1,0 +1,28 @@
+.grid-info{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.info-card{
+    background-color: rgb(126, 103, 103);
+    color: rgb(77, 25, 25);
+    border-radius: 4px;
+    box-shadow: 0 4px 10px rgb(126, 103, 103);
+    padding: 20px;
+}
+
+.actions{
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.4rem;
+}
+
+button{
+  border-radius: 4px;
+  padding: 4px;
+  background-color: rgb(161, 147, 147);
+
+}
+
+

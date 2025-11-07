@@ -8,7 +8,7 @@ import { BooksList } from "../../components/books-list/books-list";
   templateUrl: './books-list-page.html',
   styleUrl: './books-list-page.css',
 })
-export class BooksPage {
+export class BooksListPage {
 
 }
 

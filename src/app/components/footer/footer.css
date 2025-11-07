@@ -1,0 +1,18 @@
+.footer-cont{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(172, 147, 147);
+}
+
+.text-footer{
+  font-size: 1.5rem;
+  padding: 30px 20px;
+}
+
+.logo-footer{
+  font-size: 2rem;
+  padding: 30px 20px;
+}
+
+  
